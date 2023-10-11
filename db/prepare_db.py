@@ -14,7 +14,7 @@ DB_CREDENTIALS = {
 
 
 def create_db():
-    with open("prepare_db.sql") as f:
+    with open("db/prepare_db.sql") as f:
         create_db_query = f.read()
 
     connection = psycopg2.connect(**DB_CREDENTIALS)
